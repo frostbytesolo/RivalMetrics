@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="RivalMetrics logo">
+  <!--
+    RivalMetrics master logo.
+    Icon: two opposing chevrons forming a stylized "rivalry / metrics" mark,
+    framed by a rounded square — precision, transparency, global reach.
+    Colors are driven by CSS variables (see app/globals.css):
+      light: --logo-color #6A4DF5  (primary)
+      dark:  --logo-color #C9B8FF  (accent)
+    No embedded text on the icon. Wordmark is rendered in HTML for crispness.
+  -->
+  <defs>
+    <linearGradient id="rm-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#C9B8FF" />
+      <stop offset="100%" stop-color="#6A4DF5" />
+    </linearGradient>
+  </defs>
+
+  <!-- Rounded square frame -->
+  <rect x="56" y="56" width="400" height="400" rx="96" ry="96"
+        fill="none" stroke="url(#rm-grad)" stroke-width="20" />
+
+  <!-- Left chevron (pointing right) -->
+  <path d="M150 168 L246 256 L150 344"
+        fill="none" stroke="url(#rm-grad)" stroke-width="28"
+        stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- Right chevron (pointing left) — the rival -->
+  <path d="M362 168 L266 256 L362 344"
+        fill="none" stroke="#C9B8FF" stroke-width="28"
+        stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- Center metric node -->
+  <circle cx="256" cy="256" r="14" fill="url(#rm-grad)" />
+</svg>
